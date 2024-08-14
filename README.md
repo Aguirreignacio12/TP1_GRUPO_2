@@ -8,12 +8,12 @@ El proyecto consiste en la creación de un conjunto de clases y métodos en Java
 El proyecto se organiza en paquetes, donde cada paquete corresponde a un ejercicio específico. A continuación, se describe la estructura básica:
 
 TP1_GRUPO_2/
-|-src/
-  |-ejercicio1/
-   |--Empleado.java
-   |-- Main.java
-|- README.md
-|- .gitignore
+src/
+  ejercicio1/
+          Empleado.java
+          Main.java
+README.md
+.gitignore
 
 **src/**: Carpeta que contiene el código fuente.
 **ejercicio1/**: Paquete que contiene la clase Empleado y la clase Principal con el método main.
