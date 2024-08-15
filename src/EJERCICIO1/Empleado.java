@@ -1,18 +1,21 @@
 package EJERCICIO1;
 
 public class Empleado {
-	int _id = 1;
+	private final int _id;
 	private String _name;
 	private int _age;
+	private static int cont = 1000;
 
 	public Empleado() {
-		_id = _id++;
-		_name = "undefined";
-		_age = -1;
+		_id = cont;
+		cont++;
+		_name = "sin nombre";
+		_age = 99;
 	}
 
-	public Empleado(int id,String name, int age) {
-		this._id= id;
+	public Empleado(String name, int age) {
+		_id = cont;
+		cont++;
 		this._name = name;
 		this._age = age;
 	}
@@ -37,9 +40,12 @@ public class Empleado {
 		return _id;
 	}
 	
+	public static int devuelveProximoID() {
+		return cont++;
+	}
 	//METHOD PUBLIC
 	@Override
 	public String toString() {
-		return "Empleado " + _id + "\n name: " + _name  + "\n age: " + _age;
+		return "Empleado: " + _id + "\n Nombre: " + _name  + "\n Edad: " + _age;
 	}
 	}
