@@ -46,6 +46,6 @@ public class Empleado {
 	//METHOD PUBLIC
 	@Override
 	public String toString() {
-		return "Empleado: " + _id + "\n Nombre: " + _name  + "\n Edad: " + _age;
+		return "Empleado: " + _name + "\n Edad: " + _age + "\n Legajo: "  + _id + "\n";
 	}
 	}
