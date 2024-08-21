@@ -16,7 +16,7 @@ public class Principal{
 		System.out.println(A.toString());
 		System.out.println(N.toString());
 		
-		System.out.println(Empleado.devuelveProximoID());
+		System.out.println("El próximo ID será el " + Empleado.devuelveProximoID());
 	}
 
 }
